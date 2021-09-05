@@ -63,9 +63,9 @@ def output():
     return render_template('result.html', out=out, Xdata=Xdata[0])
 
 
+init()
 
 if __name__ == "__main__":
-    init()
     app.run('0.0.0.0', port=80, debug=True)
 
 
