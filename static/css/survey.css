@@ -1,0 +1,27 @@
+.inte {
+    text-align: left;
+    display: block;
+    margin-left: 5%;
+}
+
+.under {
+    border-bottom: 5px solid rgb(0, 209, 157);
+}
+
+input {
+    width: 80%;
+    border: 0px;
+    border-radius: 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px 5%;
+}
+
+button {
+    width: 90%;
+    height: 60px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    font-size: 20px;
+    font-weight: 700;
+}

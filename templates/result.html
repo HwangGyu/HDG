@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDGS 2-4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/common.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/result.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/fullpage.css')}}">
+
+</head>
+<body>
+      <div id="fullpage">
+            <div class="section">
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    
+                    <h1 class="inte under" style="font-size: 40px; display: block; text-align: left; margin-left: 5%;">결과</h1><br><br>
+
+                        <label>Pregnancies</label>
+                        <div class="box">{{Xdata[0]}}</div><br>
+                        <label>Glucose</label>
+                        <div class="box">{{Xdata[1]}}</div><br>
+                        <label>BloodPressure</label>
+                        <div class="box">{{Xdata[2]}}</div><br>
+                        <label>SkinThickness</label>
+                        <div class="box">{{Xdata[3]}}</div><br>
+                </div>
+                
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    
+                    <h1 class="inte under" style="font-size: 40px; display: block; text-align: left; margin-left: 5%;">결과</h1><br><br>
+
+                    <label>Insulin</label>
+                    <div class="box">{{Xdata[4]}}</div><br>
+                    <label>BMI</label>
+                    <div class="box">{{Xdata[5]}}</div><br>
+                    <label>DiabetesPedigreeFunction</label>
+                    <div class="box">{{Xdata[6]}}</div><br>
+                    <label>Age</label>
+                    <div class="box">{{Xdata[7]}}</div><br>
+                </div>    
+
+                <div class="slide cp">
+                    <h1 style="margin-bottom: 30px;">결과</h1>
+                    <img src="{{url_for('static', filename='img/20943682.jpg')}}" alt="">
+                    <h3>당뇨병일 확률</h3>
+                    <progress value="{{out['diabetes']}}" max="1"></progress><br><br>
+
+                    <h3>당뇨병 아닐 확률</h3>
+                    <progress value="{{out['not_diabetes']}}" max="1"></progress>
+
+                </div>
+
+            </div>
+        </div>
+      
+
+
+</body>
+<script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+<script src="{{url_for('static', filename='js/fullpage.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/animate.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/result.js')}}"></script>
+
+</html>

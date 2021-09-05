@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDGS 2-4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/common.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/survey.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/fullpage.css')}}">
+
+</head>
+<body>
+    <form action="/submit" method="POST">
+      <div id="fullpage">
+            <div class="section">
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    <h1 class="inte under" style="font-size: 40px;">Pregnancies</h1>
+                    <h5 class="inte" style="font-size: 15px; font-weight: 300;">Number of times pregnant</h5>
+                    <div style="height: 50%;"></div>
+                    <input type="text" name="Pregnancies" placeholder="값을 입력해주세요.">
+                </div>
+
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    <h1 class="inte under" style="font-size: 40px;">Glucose</h1>
+                    <h5 class="inte" style="font-size: 15px; font-weight: 300; width: 300px;">Plasma glucose concentration a 2 hours in an oral glucose tolerance test</h5>
+                    <div style="height: 50%;"></div>
+                    <input type="text" name="Glucose" placeholder="값을 입력해주세요.">
+                </div>
+
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    <h1 class="inte under" style="font-size: 40px;">BloodPressure</h1>
+                    <h5 class="inte" style="font-size: 15px; font-weight: 300; width: 300px;">Diastolic blood pressure (mm Hg)</h5>
+                    <div style="height: 50%;"></div>
+                    <input type="text" name="BloodPressure" placeholder="값을 입력해주세요.">
+                </div>
+
+                
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    <h1 class="inte under" style="font-size: 40px;">SkinThickness</h1>
+                    <h5 class="inte" style="font-size: 15px; font-weight: 300; width: 300px;">Triceps skin fold thickness (mm)</h5>
+                    <div style="height: 50%;"></div>
+                    <input type="text" name="SkinThickness" placeholder="값을 입력해주세요.">
+                </div>
+
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    <h1 class="inte under" style="font-size: 40px;">Insulin</h1>
+                    <h5 class="inte" style="font-size: 15px; font-weight: 300; width: 300px;">2-Hour serum insulin (mu U/ml)</h5>
+                    <div style="height: 50%;"></div>
+                    <input type="text" name="Insulin" placeholder="값을 입력해주세요.">
+                </div>
+
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    <h1 class="inte under" style="font-size: 40px;">BMI</h1>
+                    <h5 class="inte" style="font-size: 15px; font-weight: 300; width: 300px;">Body mass index (weight in kg/(height in m)^2)</h5>
+                    <div style="height: 50%;"></div>
+                    <input type="text" name="BMI" placeholder="값을 입력해주세요.">
+                </div>
+
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    <h1 class="inte under" style="font-size: 40px;">Diabetes<br>PedigreeFunction</h1>
+                    <h5 class="inte" style="font-size: 15px; font-weight: 300; width: 300px;">Diabetes pedigree function</h5>
+                    <div style="height: 50%;"></div>
+                    <input type="text" name="DiabetesPedigreeFunction" placeholder="값을 입력해주세요.">
+                </div>
+
+                <div class="slide cp">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    <h1 class="inte under" style="font-size: 40px;">Age<br>Age (Year)</h1>
+                    <h5 class="inte" style="font-size: 15px; font-weight: 300; width: 300px;">Diabetes pedigree function</h5>
+                    <div style="height: 50%;"></div>
+                    <input type="text" name="Age" placeholder="값을 입력해주세요.">
+                </div>
+
+
+
+
+                <div class="slide cp">
+                    <h1>설문 제출하기</h1>
+                    <img src="{{url_for('static', filename='img/56787654.jpg')}}" alt="">
+                    <button type="submit" style="background-color: rgb(0, 209, 157); color: white;">제출하기</button>
+                </div>
+
+    
+            </div>
+        </div>
+</form>
+      
+
+
+</body>
+<script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+<script src="{{url_for('static', filename='js/fullpage.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/animate.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/survey.js')}}"></script>
+
+</html>

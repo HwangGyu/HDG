@@ -4,37 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SDGS 2-4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='css/common.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/fullpage.css')}}">
+
 </head>
-
 <body>
+        <div id="fullpage">
+            <div class="section">
 
-    <div class="fixed">
-        <br>
-        <h1>당뇨병 자가진단</h1><br><br>
-        <progress value="0" max="{{lenawd}}" id="pro"></progress>
-
-
-        {% for i, v in enumerate(question) %}
-        <div class="box">
-            <h1>{{i + 1}}</h1>
-            <p>{{v}}</p><br>
-            <button class="btn" data-ts="1" data-cnt="{{i}}" id="N{{i}}-1">예</button>
-            <button class="btn" data-ts="0" data-cnt="{{i}}" id="N{{i}}-0" style="margin-left: 20px;">아니오</button>    
-        </div><hr>
-        {% endfor %}
-
-
-
-
-    </div>
+                <div class="cp slide">
+                    <img class="logo" src="{{url_for('static', filename='img/logo.png')}}" alt="">
+                    <h1 class="teamname">Hengineer</h1>
+                    <h4 style="font-weight: 400;">당뇨병 자가진단 앱</h4>
+                    <label style="font-size: 13px; color: rgb(240, 240, 240);">Designed By ㅈㅁㄱ</label>
+                    <div style="height: 30%;"></div>
+                    <img class="nextimg main" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+                    <h4 class="nexttext">오른쪽으로<br>스크롤해서 설명보기</h4>
+                </div>
+                <div class="cp slide">
+                    <h1 class="nt-te">밀어서 다음으로</h1>
+                    <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
     
+                    <img class="infimg" src="{{url_for('static', filename='img/3255469.jpg')}}" alt="">
+                    
+                    <h1>안녕하세요!</h1>
+                    <p style="margin-top: 20px; font-size: 18px;">
+                            안녕하세요 저희 팀은 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    </p>
+                </div>
+                <div class="cp slide">
+                        <h1 class="nt-te">밀어서 다음으로</h1>
+                        <img class="nextimg nt sub-ne" src="{{url_for('static', filename='img/right-arrow.svg')}}" alt="">
+        
+    
+                    <img class="infimg" src="{{url_for('static', filename='img/20944859.png')}}" alt="">
+                    <h1>안녕하세요!</h1>
+                    <p style="margin-top: 20px; font-size: 18px;">
+                            안녕하세요 저희 팀은 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    </p>
+    
+                </div>
+                <div class="cp slide">
+                    <div class="link">
+                            <img src="{{url_for('static', filename='img/2124054.jpg')}}" width="100%" alt=""><br>
+                        <button onclick="location.href = '/survey'">설문조사 진행하기</button><br>
+                        <a href="/law" style="z-index: 100; color: #aaa; font-size: 10px;">법률정보</a><br>
+
+                    </div>
+                </div>
+    
+    
+            </div>
+
+        </div>
+
+
 </body>
-<script
-src="https://code.jquery.com/jquery-3.6.0.min.js"
-integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-crossorigin="anonymous"></script>
-<script src="{{url_for('static', filename='js/script.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+<script src="{{url_for('static', filename='js/fullpage.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/animate.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+
 </html>

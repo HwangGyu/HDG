@@ -1,72 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-
-
-body * {
+html * {
     padding: 0px;
     margin: 0px;
-    display: inline-block;
-    
-    color: white;
-}
-
-.fixed {
-    margin-bottom: 200px;
-    max-width: 500px;
-    min-height: -webkit-fill-available;
-    position: relative;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    padding: 0px 5%;
-    text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+img {
+    max-width: 400px;
+}
 
-button {
-    padding: 10px 30px;
-    border: 0px;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: 900;
-    transition: 0.3s;
-    cursor: pointer;
-    bottom: 30px;
-    margin-top: 30px;
-    color: black;
-    background-color: rgb(240, 240, 240);
+.nt {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.nextimg {
+    width: 30px;
+    margin-bottom: 20px;
+    filter: invert(0.9);
+    opacity: 0;
 }
 
 
+.nt-te {
+    right: 30px;
+    position: absolute;
+    top: 25px;
+    display: inline-block;
+    color: rgb(228, 228, 228);
+    font-size: 14px;
+    font-weight: 300;
+}
 
-progress {
-    max-width: 490px;
-    width: 90%;
-    border: 0px;
-    left: 5%;
+
+html {
+    background-color: white;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.fixed {
+    width: 90vw;
+    height: calc(100vh - 40px);
+    padding: 20px 5vw;
     position: fixed;
-    bottom: 30px;
-}
-progress::-webkit-progress-bar { 
-    background-color: rgb(240, 240, 255);
-    border-radius: 10px;
     overflow: hidden;
+} 
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
 }
 
 
-hr {
-    width: 85%;
-    margin: 20px 0px;
-    border: 0px;
-    height: 2px;
-    background-color: rgb(94, 94, 94);
-}
-
-progress::-webkit-progress-value { 
-    background-color: rgb(72, 72, 255);
-    ;
+.cp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
