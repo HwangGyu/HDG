@@ -1,3 +1,8 @@
+p {
+    width:80%;
+    margin-left:10%;
+}
+
 .title {
     position: fixed;
     left: 5%;
