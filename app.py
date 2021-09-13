@@ -55,10 +55,14 @@ def output():
 
     print('Preprocessing')
     Xdata = [a, b, c, d, e, f, g, h]
+    Xdata = np.array(Xdata)
+    Xdata = Xdata / Xdata.max()
+    Xdata = Xdata
     Xdata = preprocess(Xdata)
 
     print('Predict')
     res = md.predict(Xdata).tolist()
+    print(res)
     out = {'not_diabetes':res[0][0], 'diabetes':res[0][1]}
     return render_template('result.html', out=out, Xdata=Xdata[0])
 

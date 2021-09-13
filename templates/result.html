@@ -49,10 +49,10 @@
                 <div class="slide cp">
                     <h1 style="margin-bottom: 30px;">결과</h1>
                     <img src="{{url_for('static', filename='img/20943682.jpg')}}" alt="">
-                    <h3>당뇨병일 확률</h3>
+                    <h3>당뇨병일 확률 : {{out['diabetes']}}</h3>
                     <progress value="{{out['diabetes']}}" max="1"></progress><br><br>
 
-                    <h3>당뇨병 아닐 확률</h3>
+                    <h3>당뇨병 아닐 확률 : {{out['not_diabetes']}}</h3>
                     <progress value="{{out['not_diabetes']}}" max="1"></progress>
 
                 </div>
